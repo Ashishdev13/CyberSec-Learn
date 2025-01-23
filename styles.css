@@ -1,0 +1,171 @@
+/* Matrix Background Animation */
+@keyframes matrix {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #00ff00; /* Neon green text */
+    overflow: auto; /* Allow scrolling */
+    position: relative;
+    background: #000; /* Fallback background */
+  }
+  
+  .matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000, #001f00);
+    z-index: -1;
+    animation: matrix 10s linear infinite;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ff00;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+    position: relative;
+    z-index: 1;
+  }
+  
+  nav {
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ff00;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+    position: relative;
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    position: relative;
+    z-index: 1;
+  }
+  
+  footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ff00;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 2px solid #00ff00;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ff00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #00cc00;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    background: #000;
+    color: #00ff00;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background: #00cc00;
+  }
+  
+  ul#tips {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul#tips li {
+    background: rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    color: #00ff00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul#tips li.pinned {
+    background: rgba(0, 64, 0, 0.8); /* Darker green for pinned tips */
+  }
+  
+  ul#tips li .buttons {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+  }
+  
+  ul#tips li button {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  ul#tips li button.pin {
+    background: #00ff00;
+    color: #000;
+  }
